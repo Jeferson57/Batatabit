@@ -31,6 +31,8 @@ html {
     font-family: 'DM Sans', sans-serif;
 }
 
+/*Estilos para el header*/
+
 header {
     position: relative;
     display: flex;
@@ -105,11 +107,15 @@ header img {
     background-repeat: no-repeat;
 }
 
+/*Código para los estilos del main*/
+
 main {
     width: 100%;
     height: auto;
     background-color: var(--off-white);
 }
+
+/*Código para la primera sección del main (sección de monedad)*/
 
 .main-exchange-container {
     width: 100%;
@@ -239,6 +245,8 @@ main {
     background-repeat: no-repeat;
 }
 
+/*Código para la fecha actualizada de la primera tabla*/
+
 .currency-table--date {
     width: 190px;
     height: 30px;
@@ -255,7 +263,9 @@ main {
     font-weight: 300;
     color: var(--warm-black);
 }
+
 /*Código para la segunda table de comisiones*/
+
 .main-commissions-table {
     width: 60%;
     min-width: 235px;
@@ -301,6 +311,8 @@ main {
     color: #757575;
 }
 
+/*Código para la fecha actualizada de la segunda tabla*/
+
 .main-commissions-table .commissions-table-date {
     width: 190px;
     height: 30px;
@@ -316,4 +328,124 @@ main {
     line-height: 1.5rem;
     font-weight: 300;
     color: var(--warm-black);
+}
+
+/*Código para la segunda sección del main (sesción de beneficios)*/
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+/*Cuando colocamos un elemento en position absolute va a buscar al primer contenedor padre que tenga un position relative para que se base de ahí */
+
+.product-detail--batata-logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background-image: url('./assets/images/potato.svg');
+    top: -13px;
+    left: calc(50% - 20px);
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+/*Estilos para las tarjetas de beneficios*/
+
+.product-datail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--warm-black-1);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-datail--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/clock.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-datail--card .eye {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/eye.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-datail--card .dollar {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/dollar-sign.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-datail--card .check-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/check-circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }
